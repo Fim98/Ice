@@ -11,4 +11,16 @@ enum SettingsNavigationIdentifier: String, NavigationIdentifier {
     case hotkeys = "Hotkeys"
     case advanced = "Advanced"
     case about = "About"
+
+    /// Localized display name for the identifier.
+    var localized: String {
+        switch self {
+        case .general: String(localized: "General")
+        case .menuBarLayout: String(localized: "Menu Bar Layout")
+        case .menuBarAppearance: String(localized: "Menu Bar Appearance")
+        case .hotkeys: String(localized: "Hotkeys")
+        case .advanced: String(localized: "Advanced")
+        case .about: String(localized: "About")
+        }
+    }
 }

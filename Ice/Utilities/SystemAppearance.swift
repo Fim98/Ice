@@ -76,8 +76,8 @@ enum SystemAppearance {
     /// The title key to display in the interface.
     var titleKey: LocalizedStringKey {
         switch self {
-        case .light: "Light Appearance"
-        case .dark: "Dark Appearance"
+        case .light: LocalizedStringKey("Light Appearance")
+        case .dark: LocalizedStringKey("Dark Appearance")
         }
     }
 }
